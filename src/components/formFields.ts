@@ -67,7 +67,7 @@ const createFormGroup = (element: FormDataType): HTMLDivElement => {
 
     const label = createLabel(element)
 
-    inputField.required = true
+    // inputField.required = true
     formGroup.appendChild(label)
     formGroup.appendChild(inputField)
 

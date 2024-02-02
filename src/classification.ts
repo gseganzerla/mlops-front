@@ -3,11 +3,11 @@ export const classification = (data: object) => {
     $.ajax({
         url: 'http://localhost:5000/classification',
         method: 'POST',
-        data: data,
+        contentType: 'application/json;charset=UTF-8',
+        data: JSON.stringify(data),
         beforeSend: () => { },
         success: (response) => {
-            console.log(response);
-
+            $('#text').text(JSON.stringify(response, undefined, 4))
         },
         error: () => { },
     })
