@@ -208,12 +208,6 @@ export const data: FormDataType[] = [
     options: ['direct', 'Indriect',]
   },
   {
-    id: 'Status',
-    label: 'Status',
-    type: 'select',
-    options: []
-  },
-  {
     id: 'dtir1',
     label: 'Dtir1',
     type: 'number',

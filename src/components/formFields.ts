@@ -31,7 +31,7 @@ const createLabel = ({ id, label: labelText }: FormDataType): HTMLLabelElement =
     return label
 }
 
-const createSelect = ({ id, label, options }: FormDataType): HTMLSelectElement => {
+const createSelect = ({ id, options }: FormDataType): HTMLSelectElement => {
     const createEmptyOption = () => {
         const emptyOption = document.createElement('option')
         emptyOption.selected = true
@@ -40,6 +40,8 @@ const createSelect = ({ id, label, options }: FormDataType): HTMLSelectElement =
 
     const select = document.createElement('select')
     select.classList.add('form-select')
+    select.id = id
+    select.name = id
 
     select.appendChild(createEmptyOption())
 
