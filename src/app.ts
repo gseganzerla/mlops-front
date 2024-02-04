@@ -31,8 +31,8 @@ $('.faker').click(() => {
     for (const property in faker) {
         if (faker.hasOwnProperty(property)) {
 
+            // @ts-ignore
             $(`#${property}`).val(faker[property])
-            console.log(faker[property]);
 
         }
     }
