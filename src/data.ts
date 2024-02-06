@@ -12,7 +12,7 @@ export const data: FormDataType[] = [
     id: 'Gender',
     label: 'Gender',
     type: 'select',
-    options: ['Male',]
+    options: ['Male', 'Joint', 'Female', 'Sex Not Available']
   },
 
   {
